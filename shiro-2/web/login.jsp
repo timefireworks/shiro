@@ -6,7 +6,7 @@
 <body>
     <h4>Login Page</h4>
 
-    <form action="shiro/shiroLogin" method="post">
+    <form action="shiro/login" method="post">
         username:<input type="text" name="username"/>
         <br><br>
 

@@ -107,8 +107,8 @@
         <property name="filterChainDefinitions">
             <value>
                 /login = anon
-                /login/shiroLogin = anon
-                /login/logout = logout
+                /shiro/login = anon
+                /shiro/logout = logout
                 # everything else requires authentication:
                 /** = authc
             </value>

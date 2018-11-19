@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RequestMapping("/shiro")
 public class ShiroHandler {
 
-    @RequestMapping( value = "shiroLogin")
+    @RequestMapping( value = "login")
     public String login(@RequestParam String username,
                         @RequestParam String password){
         Subject currentUser = SecurityUtils.getSubject();

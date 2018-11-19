@@ -6,6 +6,6 @@
 <body>
     <h4>List Page</h4>
 
-    <a href="shiro/shiroLogout">LogOut</a>
+    <a href="shiro/logout">LogOut</a>
 </body>
 </html>
