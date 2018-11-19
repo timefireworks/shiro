@@ -29,7 +29,7 @@ public class ShiroHandler {
                 System.err.println("1:" + token.hashCode());
                 currentUser.login(token);
             } catch (AuthenticationException ae){
-                System.out.println("登录失败" + ae.getMessage());
+                System.out.println("登录失败:" + ae.getMessage());
             }
         }
         return "redirect:/list.jsp";
