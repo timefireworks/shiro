@@ -9,3 +9,4 @@
    1)实际上需要继承org.apache.shiro.realm.AuthenticatingRealm类
    2）实现doGetAuthenticationInfo(AuthenticationToken)方法
 6、由shiro完成对密码的比对
+   通过AuthenticatingRealm的credentialsMatcher属性来进行密码的比对

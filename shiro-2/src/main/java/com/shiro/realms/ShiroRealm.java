@@ -1,6 +1,7 @@
 package com.shiro.realms;
 
 import org.apache.shiro.authc.*;
+import org.apache.shiro.crypto.hash.SimpleHash;
 import org.apache.shiro.realm.AuthenticatingRealm;
 import org.apache.shiro.realm.Realm;
 
@@ -35,12 +36,23 @@ public class ShiroRealm extends AuthenticatingRealm {
         //1）principal: 认证的实体信息，可以是username, 也可以是数据库表对应的用户的实体类对象
         Object principal = username;
         //2）credentials: 密码
-        Object credentials = "123456";
+        Object credentials = "fc1709d0a95a6be30bc5926fdb7f22f4";
         //realmNamm: 当前realm对象的name,调用符类的getName()方法即可
         String realmName = getName();
 
         SimpleAuthenticationInfo info = new SimpleAuthenticationInfo(principal, credentials, realmName);
 
         return info;
+    }
+
+    //MD5加密"123456" 1024次
+    public static void main(String[] args) {
+        String hashAlgorithmName = "MD5";
+        Object credentials = "123456";
+        Object salt = null;
+        int hashIterations = 1024;
+
+        Object result = new SimpleHash(hashAlgorithmName, credentials, salt, hashIterations);
+        System.out.println(result);
     }
 }

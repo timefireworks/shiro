@@ -71,7 +71,8 @@ public class Quickstart {
         log.info("------------------->User [" + currentUser.getPrincipal() + "] logged in successfully.");
 
         //test a role:
-        if (currentUser.hasRole("schwartz333")) {
+        //测试是否有某一个角色
+        if (currentUser.hasRole("schwartz")) {
             log.info("-------------------->May the Schwartz be with you!");
         } else {
             log.info("-------------------->Hello, mere mortal.");
@@ -79,22 +80,26 @@ public class Quickstart {
         }
 
         //test a typed permission (not instance-level)
+        //测试用户是否具备某一个行为，调用Subject的isPermitted（）方法
         if (currentUser.isPermitted("lightsaber:weild")) {
-            log.info("You may use a lightsaber ring.  Use it wisely.");
+            log.info("------------>You may use a lightsaber ring.  Use it wisely.");
         } else {
             log.info("Sorry, lightsaber rings are for schwartz masters only.");
         }
 
         //a (very powerful) Instance Level permission:
         if (currentUser.isPermitted("winnebago:drive:eagle5")) {
-            log.info("You are permitted to 'drive' the winnebago with license plate (id) 'eagle5'.  " +
+            log.info("-------->You are permitted to 'drive' the winnebago with license plate (id) 'eagle5'.  " +
                     "Here are the keys - have fun!");
         } else {
             log.info("Sorry, you aren't allowed to drive the 'eagle5' winnebago!");
         }
 
         //all done - log out!
+        //执行登出
         currentUser.logout();
+
+        System.out.println("----->" + currentUser.isAuthenticated());
 
         System.exit(0);
     }

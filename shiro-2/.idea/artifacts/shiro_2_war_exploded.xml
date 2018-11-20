@@ -1,0 +1,38 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="shiro-2:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/shiro_2_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="shiro-2/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="shiro-2" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:5.0.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.0.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.0.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-tx:5.0.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:5.0.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.0.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.0.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context-support:5.0.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:5.0.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.0.8.RELEASE" />
+          <element id="library" level="project" name="Maven: log4j:log4j:1.2.17" />
+          <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-api:2.10.0" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-log4j12:1.7.25" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.25" />
+          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-all:1.3.2" />
+          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-guice:1.3.2" />
+          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-core:1.3.2" />
+          <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:1.8.3" />
+          <element id="library" level="project" name="Maven: com.google.inject:guice:3.0" />
+          <element id="library" level="project" name="Maven: javax.inject:javax.inject:1" />
+          <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
+          <element id="library" level="project" name="Maven: com.google.inject.extensions:guice-multibindings:3.0" />
+          <element id="library" level="project" name="Maven: net.sf.ehcache:ehcache:2.10.3" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
